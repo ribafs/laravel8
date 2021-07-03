@@ -1,0 +1,19 @@
+Podemos criar times/equipes para o uso do aplicativo, com administradores e editores
+
+Mas para adicionar um integrante de um team precisamos ter o servidor de e-mail instalado ou pelo menos com o suporte ao envio de e-mail
+
+laravel new times --jet --teams --stack=livewire
+
+composer require laravel/jetstream
+
+php artisan jetstream:install livewire --teams
+
+npm install
+npm run dev
+php artisan migrate
+
+php artisan vendor:publish --tag=jetstream-views
+
+npm run dev
+
+
